@@ -22,6 +22,10 @@ public class TurmaService {
         return turmaRepository.findAll();
     }
 
+    public Iterable<Turma> listarControleOcupacao() {
+        return turmaRepository.listarControleOcupacao();
+    }
+
     public ResponseEntity<?> salvar(Turma turma, String acao) {
         if (acao.equals("Salvar")) {
             return new ResponseEntity<Turma>(turmaRepository.save(turma), HttpStatus.CREATED);

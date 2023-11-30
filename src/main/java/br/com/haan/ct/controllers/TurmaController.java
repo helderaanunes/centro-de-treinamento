@@ -41,4 +41,9 @@ public class TurmaController {
     public ResponseEntity<RespostaModelo> deletar (@PathVariable Long id){
         return turmaService.remover(id);
     }
+
+    @GetMapping("/controleOcupacao")
+    public Iterable<Turma> listarControleOcupacao(){
+        return turmaService.listarControleOcupacao();
+    }
 }

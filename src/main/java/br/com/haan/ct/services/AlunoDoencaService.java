@@ -16,7 +16,6 @@ public class AlunoDoencaService {
     @Autowired
     private AlunoDoencaRepository alunoDoencaRepository;
 
-    // aula do dia 10/08
     @Autowired
     private RespostaModelo respostaModelo;
 

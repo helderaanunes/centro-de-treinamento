@@ -22,4 +22,5 @@ public class Turma {
     private String dia3;
     private String descricao;
     private double valorMensalidade;
+    private String local;
 }
